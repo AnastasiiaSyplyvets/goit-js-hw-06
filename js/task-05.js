@@ -5,8 +5,12 @@ const inputNewContent = document.querySelector('#name-output');
 
 inputEl.addEventListener('input', (event) => {
 
-    inputNewContent.textContent = event.target.value;
+if(inputEl.value === '') {
+    inputNewContent.textContent = "Anonymous";
+}
 
-    
+ else{inputNewContent.textContent = event.target.value;
+}   
+  
 });
 

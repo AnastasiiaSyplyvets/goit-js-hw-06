@@ -35,8 +35,13 @@ formEl.addEventListener('submit', (event) => {
         {alert("All fields should be filled in");
         return;}
 
-        console.log('Email: ', emailInputEl.value);
-        console.log('Password: ', passwordInputEl.value);
+        const result = {
+            email:  emailInputEl.value,
+            password: passwordInputEl.value,
+        };
+        
+        console.log(result);
+       
 
         event.target.reset();
 })

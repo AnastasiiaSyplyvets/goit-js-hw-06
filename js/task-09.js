@@ -24,6 +24,7 @@ changeColorBtnEl.addEventListener('click', (event) => {
 
   bodyEl.style.backgroundColor = getRandomHexColor();
  
-  randomColorEl.textContent = getRandomHexColor();
+  randomColorEl.textContent =  bodyEl.style.backgroundColor;
   
 });
+console.log(getRandomHexColor)

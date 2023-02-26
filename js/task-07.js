@@ -4,8 +4,14 @@ const fontSizeControlEl = document.querySelector('#font-size-control');
 const insideTextEl = document.querySelector('#text');
 // console.log(insideTextEl)
 
-fontSizeControlEl.addEventListener('input', (event) => {
+// insideTextEl.style.fontSize = "16px";
 
-    insideTextEl.style.fontSize = event.currentTarget.value + "px";
+ 
+insideTextEl.style.fontSize = fontSizeControlEl.value + "px";
+fontSizeControlEl.addEventListener('input', (event) => {
+        
+        insideTextEl.style.fontSize = event.currentTarget.value + "px";
+
 
 })
+
